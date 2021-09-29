@@ -8,6 +8,8 @@ body {
     font-weight: 400;
     background: $theme-background;
     position: relative;
+    direction: rtl;
+    text-align: right;
 }
 
 * {
@@ -876,7 +878,8 @@ p.text-muted {
     display: inline-block;
     white-space: nowrap;
     word-wrap: normal;
-    direction: ltr;
+    direction: rtl;
+    text-align: right;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
