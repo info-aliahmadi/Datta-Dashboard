@@ -21,7 +21,7 @@ const chatList = (props) => {
                     </div>
                 </div>
                 <div className="h-list-body">
-                    <a href={DEMO.BLANK_LINK} className="h-close-text" onClick={props.closed}><i className="feather icon-chevrons-right" /></a>
+                    <a href={DEMO.BLANK_LINK} className="h-close-text" onClick={props.closed}><i className="feather icon-chevrons-left" /></a>
                     <div className="main-friend-cont scroll-div">
                         <div className="main-friend-list" style={{height: 'calc(100vh - 85px)'}}>
                             <PerfectScrollbar>

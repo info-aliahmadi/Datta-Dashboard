@@ -8,7 +8,7 @@
     width: 350px;
     position: fixed;
     top: 0;
-    right: -350px;
+    left: -350px;
     border-radius: 0;
     z-index: 1030;
     background-color: #fff;
@@ -32,7 +32,7 @@
 
     &.open {
         box-shadow: 0 1px 10px 0 rgba(69,90,100,0.2);
-        right: 0;
+        left: 0;
     }
 }
 
@@ -41,19 +41,19 @@
         .h-close-text {
             position: absolute;
             top: 111px;
-            left: -99px;
+            right: -99px;
 
             i {
                 position: absolute;
                 top: 23px;
-                left: 73px;
+                right: 73px;
                 font-size: 25px;
                 z-index: 1003;
                 color: $success-color;
             }
 
             &:after {
-                content: "\61";
+                content: "\62";
                 font-family: "pct";
                 z-index: 1001;
                 font-size: 150px;
@@ -61,8 +61,8 @@
                 color: #fff;
                 position: absolute;
                 top: 35px;
-                left: 6px;
-                text-shadow: -4px 0 7px rgba(69,90,100,0.12);
+                right: 6px;
+                text-shadow: 4px 0px 7px #455a641f;
             }
         }
 

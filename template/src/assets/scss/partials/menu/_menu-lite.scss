@@ -140,7 +140,7 @@
     background: transparent;
     color: $header-light-text-color;
     width: calc(100% - #{$Menu-width});
-    margin-left: $Menu-width;
+    margin-right: $Menu-width;
     transition: all 0.3s ease-in-out;
 
     .m-header {
@@ -194,11 +194,11 @@
             }
 
             &:first-child {
-                padding-left: 25px;
+                padding-right: 25px;
             }
 
             &:last-child {
-                padding-right: 40px;
+                padding-left: 40px;
             }
         }
     }
@@ -208,14 +208,31 @@
             margin-left: -20px;
         }
     }
+    .mr-auto-right {
+        margin-left: auto !important;
+        padding-right: 0;
+        .dropdown-menu {
+            margin-left: -20px;
+        }
+    }
 
     .ml-auto {
-        float: right;
+        float: left;
 
         .dropdown-menu {
             margin-right: -20px;
         }
     }
+    
+    .ml-auto-right {
+        margin-right: auto !important;
+        float: left;
+
+        .dropdown-menu {
+            margin-right: -20px;
+        }
+    }
+
 
     .main-search {
         .input-group {
@@ -517,7 +534,7 @@
     width: 37px;
     height: $header-height;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     padding: 0 10px;
 
@@ -595,7 +612,7 @@
     box-shadow: 1px 0 20px 0 rgb(63, 77, 103);
 
     ul {
-        padding-left: 0;
+        padding-right: 0;
         list-style: none;
         margin-bottom: 0;
     }
@@ -608,7 +625,7 @@
         position: relative;
         align-items: center;
         display: inline-flex;
-        float: left;
+        float: right;
         height: $header-height;
         text-align: center;
         width: $Menu-width;
@@ -640,7 +657,7 @@
         width: 37px;
         height: $header-height;
         position: absolute;
-        right: 10px;
+        left: 10px;
         top: 0;
         padding: 0 10px;
         transition: all 0.3s ease-in-out;
@@ -702,7 +719,7 @@
     .pcoded-badge {
         font-size: 75%;
         position: absolute;
-        right: 30px;
+        left: 30px;
         top: 12px;
         padding: 2px 7px;
         border-radius: 2px;
@@ -715,7 +732,7 @@
             position: relative;
 
             > a {
-                text-align: left;
+                text-align: right;
                 padding: 7px 15px;
                 margin: 5px 0 0;
                 display: block;
@@ -945,7 +962,7 @@
                             content: "";
                             position: absolute;
                             top: 49px;
-                            left: calc(calc(#{$Menu-collapsed-width} / 2) - 3px);
+                            right: calc(calc(#{$Menu-collapsed-width} / 2) - 3px);
                             width: 1px;
                             height: calc(100% - 49px);
                             background: transparentize($menu-dark-text-color,0.8);
@@ -976,7 +993,7 @@
 
         ~ .pcoded-header,
         ~ .pcoded-main-container {
-            margin-left: $Menu-collapsed-width;
+            margin-right: $Menu-collapsed-width;
         }
 
         .pcoded-badge {
@@ -1010,7 +1027,7 @@
 
                 .mobile-menu {
                     display: flex;
-                    right: 10px;
+                    left: 10px;
                 }
             }
 
@@ -1123,7 +1140,7 @@
                     background-color: #1dc4e9;
                     z-index: 1027;
                     position: absolute;
-                    left: 0;
+                    right: 0;
                     top: 5px;
                     width: 3px;
                     height: calc(100% - 5px);
@@ -1152,12 +1169,12 @@
     &.navbar-collapsed:hover {
         ~ .pcoded-header,
         ~ .pcoded-main-container {
-            margin-left: $Menu-collapsed-width;
+            margin-right: $Menu-collapsed-width;
 
             &:before {
                 position: absolute;
                 top: 0;
-                left: 0;
+                right: 0;
                 width: 100%;
                 height: 100%;
                 background-color: rgba(0,0,0,0.2);
@@ -1553,7 +1570,7 @@
 
         ~.pcoded-main-container {
             margin-top: $header-height * 2;
-            margin-left: 0;
+            margin-right: 0;
         }
     }
 }
@@ -1572,7 +1589,7 @@
     clear: both;
     float: unset;
     right: 0;
-    margin-left: $Menu-width;
+    margin-right: $Menu-width;
     min-height: 100vh;
     transition: all 0.3s ease-in-out;
 }
@@ -1640,7 +1657,7 @@
     }
 
     .pcoded-navbar {
-        margin-left: -#{$Menu-width};
+        margin-right: -#{$Menu-width};
         position: fixed;
         height: 100%;
         box-shadow: none;
@@ -1651,7 +1668,7 @@
 
         ~ .pcoded-header,
         ~ .pcoded-main-container {
-            margin-left: 0;
+            margin-right: 0;
         }
 
         ~ .pcoded-header {
