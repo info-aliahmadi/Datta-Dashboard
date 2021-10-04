@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import Fullscreen from "react-full-screen";
 import windowSize from 'react-window-size';
 
+import config from '../../../config';
 import Navigation from './Navigation';
 import NavBar from './NavBar';
 import Breadcrumb from './Breadcrumb';
@@ -59,7 +60,7 @@ class AdminLayout extends Component {
             <Aux>
                 <Fullscreen enabled={this.props.isFullScreen}>
                     <Navigation />
-                    <NavBar />
+                    <NavBar rtlLayout={config.rtlLayout} />
                     <div className="pcoded-main-container" onClick={() => this.mobileOutClickHandler}>
                         <div className="pcoded-wrapper">
                             <div className="pcoded-content">

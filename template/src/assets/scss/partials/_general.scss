@@ -96,6 +96,9 @@ strong {
 .theme-bg2 {
     background: $theme-color2;
 }
+.theme-bg-red {
+    background: $theme-red;
+}
 /* ==========  card css start  =========== */
 
 .anim-rotate {
@@ -152,7 +155,7 @@ p.text-muted {
                 content: "";
                 background-color: $primary-color;
                 position: absolute;
-                left: -25px;
+                right: -25px;
                 top: 0;
                 width: 4px;
                 height: 20px;
@@ -272,7 +275,7 @@ p.text-muted {
             content: "\63";
             font-family: "pct";
             position: absolute;
-            left: 15px;
+            right: 15px;
             top: -5px;
             z-index: 1001;
             font-size: 40px;

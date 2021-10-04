@@ -10,7 +10,7 @@ export default {
     navBackColor: 'navbar-default', // navbar-default, (navbar-blue, navbar-red, navbar-purple, navbar-lightblue, navbar-dark are not available in lite version)
     navBrandColor: 'brand-default', // brand-default, (brand-blue, brand-red, brand-purple, brand-lightblue, brand-dark are not available in lite version)
     navBackImage: false, // not available in lite version
-    rtlLayout: false, // not available in lite version
+    rtlLayout: true, // not available in lite version
     navFixedLayout: true,
     headerFixedLayout: false, // not available in lite version
     boxLayout: false,

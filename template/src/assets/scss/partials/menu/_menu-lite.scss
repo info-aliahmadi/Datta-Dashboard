@@ -19,7 +19,7 @@
     }
 
     .b-title {
-        margin-left: 10px;
+        margin-right: 10px;
         font-weight: 100;
         color: #fff;
         font-size: 18px;
@@ -212,7 +212,7 @@
         margin-left: auto !important;
         padding-right: 0;
         .dropdown-menu {
-            margin-left: -20px;
+            margin-right: -20px;
         }
     }
 
@@ -281,7 +281,7 @@
                 background: #fff;
                 border: 1px solid #f1f1f1;
                 box-shadow: 0 6px 12px -5px rgba(65,76,78,0.08);
-                padding: 5px 5px 5px 20px;
+                padding: 5px 20px 5px 5px;
 
                 .search-close {
                     display: flex;
@@ -289,7 +289,7 @@
 
                 .search-btn {
                     padding: 5px;
-                    margin-left: 5px;
+                    margin-right: 5px;
                     background: $primary-color;
                     border-color: $primary-color;
 
@@ -320,7 +320,7 @@
         .dropdown-toggle {
             line-height: $header-height;
             display: inline-block;
-            padding-right: 15px;
+            padding-left: 15px;
 
             &:after {
                 content: "\e842";
@@ -329,7 +329,7 @@
                 border: none;
                 position: absolute;
                 top: 0;
-                right: 0;
+                left: -10px;
             }
         }
 
@@ -338,6 +338,7 @@
             border: none;
             margin-top: -6px;
             min-width: 290px;
+            text-align: right;
 
             &.show {
                 &:before {
@@ -369,7 +370,7 @@
                 content: "\63";
                 font-family: "pct";
                 position: absolute;
-                left: -5px;
+                left: 5px;
                 top: $header-height - 10;
                 z-index: 1001;
                 font-size: 40px;
@@ -471,14 +472,14 @@
 
                 img {
                     width: 40px;
-                    margin-right: 10px;
+                    margin-left: 10px;
                 }
 
                 .dud-logout {
                     color: #fff;
                     padding-right: 0;
                     position: absolute;
-                    right: 0;
+                    left: 0;
                     top: 0;
                     height: 100%;
                     width: 40px;
@@ -719,7 +720,7 @@
     .pcoded-badge {
         font-size: 75%;
         position: absolute;
-        left: 30px;
+        left: 40px;
         top: 12px;
         padding: 2px 7px;
         border-radius: 2px;
@@ -764,13 +765,13 @@
             &.pcoded-hasmenu {
                 > a {
                     &:after {
-                        content: "\e844";
+                        content: "\e843";
                         font-family: 'feather';
                         font-size: 15px;
                         border: none;
                         position: absolute;
                         top: 11px;
-                        right: 20px;
+                        left: 20px;
                         transition: 0.3s ease-in-out;
                     }
                 }
@@ -800,8 +801,8 @@
                 .pcoded-submenu {
                     li {
                         > a {
-                            text-align: left;
-                            padding: 7px 7px 7px 60px;
+                            text-align: right;
+                            padding: 7px 60px 7px 7px;
                             margin: 0;
                             display: block;
 
@@ -810,23 +811,38 @@
                                 border-radius: 50%;
                                 position: absolute;
                                 top: 16px;
-                                left: 35px;
+                                right: 35px;
                                 width: 5px;
                                 height: 5px;
+                            }
+                            &.active,
+                            &:active,
+                            &:focus,
+                            &:hover{
+                                &:before{
+                                    background: #1dc4e9;
+                                }
                             }
                         }
 
                         .pcoded-submenu {
                             > li {
                                 > a {
-                                    padding: 7px 7px 7px 80px;
-
+                                    padding: 7px 80px 7px 7px;
+            /*************************************************************************************************************/
                                     &:before {
                                         left: 55px;
                                     }
+                                    &:hover{
+                                        &:before{
+                                            color: #fff;
+                                        }
+                                    }
                                 }
                             }
+                            
                         }
+                        
                     }
                 }
             }
@@ -1115,7 +1131,11 @@
             &:focus,
             &:hover {
 
-                    color: #1dc4e9;
+                    color: #1dc4e9;   > a {
+                        &:before {
+                            background: #1dc4e9;
+                        }
+                    }
 
             }
 
@@ -1142,7 +1162,7 @@
                     position: absolute;
                     right: 0;
                     top: 5px;
-                    width: 3px;
+                    width: 4px;
                     height: calc(100% - 5px);
                 }
 
@@ -1349,7 +1369,7 @@
 
                     a {
                         color: $menu-dark-background;
-                        padding: 10px 20px 10px 30px;
+                        padding: 10px 30px 10px 20px;
 
                         &:before {
                             left: 5px;
@@ -1393,7 +1413,7 @@
 
                         a {
                             color: $menu-dark-background;
-                            padding: 10px 20px 10px 30px;
+                            padding: 10px 30px 10px 20px;
 
                             &:before {
                                 left: 5px;
@@ -1573,6 +1593,8 @@
             margin-right: 0;
         }
     }
+
+
 }
 /* menu [ horizontal ] css end */
 /* main content start */

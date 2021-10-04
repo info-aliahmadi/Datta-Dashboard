@@ -94,7 +94,7 @@ class Dashboard extends React.Component {
                     <Col md={6} xl={4}>
                         <Card>
                             <Card.Body>
-                                <h6 className='mb-4'>Monthly Sales</h6>
+                                <h6 className='mb-4'>فروش ماهانه</h6>
                                 <div className="row d-flex align-items-center">
                                     <div className="col-9">
                                         <h3 className="f-w-300 d-flex align-items-center m-b-0"><i className="feather icon-arrow-down text-c-red f-30 m-r-5"/> $2.942.32</h3>
@@ -113,7 +113,7 @@ class Dashboard extends React.Component {
                     <Col xl={4}>
                         <Card>
                             <Card.Body>
-                                <h6 className='mb-4'>Yearly Sales</h6>
+                                <h6 className='mb-4'>فروش سالانه</h6>
                                 <div className="row d-flex align-items-center">
                                     <div className="col-9">
                                         <h3 className="f-w-300 d-flex align-items-center m-b-0"><i className="feather icon-arrow-up text-c-green f-30 m-r-5"/> $8.638.32</h3>
@@ -132,7 +132,7 @@ class Dashboard extends React.Component {
                     <Col md={6} xl={8}>
                         <Card className='Recent-Users'>
                             <Card.Header>
-                                <Card.Title as='h5'>Recent Users</Card.Title>
+                                <Card.Title as='h5'>کاربران جدید</Card.Title>
                             </Card.Header>
                             <Card.Body className='px-0 py-2'>
                                 <Table responsive hover>
@@ -140,57 +140,57 @@ class Dashboard extends React.Component {
                                     <tr className="unread">
                                         <td><img className="rounded-circle" style={{width: '40px'}} src={avatar1} alt="activity-user"/></td>
                                         <td>
-                                            <h6 className="mb-1">Isabella Christensen</h6>
-                                            <p className="m-0">Lorem Ipsum is simply dummy text of…</p>
+                                            <h6 className="mb-1">محمد امینی</h6>
+                                            <p className="m-0">لورم ایپسام فارسی برای تست...</p>
                                         </td>
                                         <td>
                                             <h6 className="text-muted"><i className="fa fa-circle text-c-green f-10 m-r-15"/>11 MAY 12:56</h6>
                                         </td>
-                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg2 text-white f-12">Reject</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">Approve</a></td>
+                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg-red text-white f-12">رد</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">تایید</a></td>
                                     </tr>
                                     <tr className="unread">
                                         <td><img className="rounded-circle" style={{width: '40px'}} src={avatar2} alt="activity-user"/></td>
                                         <td>
-                                            <h6 className="mb-1">Mathilde Andersen</h6>
-                                            <p className="m-0">Lorem Ipsum is simply dummy text of…</p>
+                                            <h6 className="mb-1">ماتیلدا منش</h6>
+                                            <p className="m-0">لورم ایپسام فارسی برای تست...</p>
                                         </td>
                                         <td>
                                             <h6 className="text-muted"><i className="fa fa-circle text-c-red f-10 m-r-15"/>11 MAY 10:35</h6>
                                         </td>
-                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg2 text-white f-12">Reject</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">Approve</a></td>
+                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg-red text-white f-12">رد</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">تایید</a></td>
                                     </tr>
                                     <tr className="unread">
                                         <td><img className="rounded-circle" style={{width: '40px'}} src={avatar3} alt="activity-user"/></td>
                                         <td>
-                                            <h6 className="mb-1">Karla Sorensen</h6>
-                                            <p className="m-0">Lorem Ipsum is simply dummy text of…</p>
+                                            <h6 className="mb-1">کارلا سارسان</h6>
+                                            <p className="m-0">لورم ایپسام فارسی برای تست...</p>
                                         </td>
                                         <td>
                                             <h6 className="text-muted"><i className="fa fa-circle text-c-green f-10 m-r-15"/>9 MAY 17:38</h6>
                                         </td>
-                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg2 text-white f-12">Reject</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">Approve</a></td>
+                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg-red text-white f-12">رد</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">تایید</a></td>
                                     </tr>
                                     <tr className="unread">
                                         <td><img className="rounded-circle" style={{width: '40px'}} src={avatar1} alt="activity-user"/></td>
                                         <td>
-                                            <h6 className="mb-1">Ida Jorgensen</h6>
-                                            <p className="m-0">Lorem Ipsum is simply dummy text of…</p>
+                                            <h6 className="mb-1">ایدا جاجری</h6>
+                                            <p className="m-0">لورم ایپسام فارسی برای تست...</p>
                                         </td>
                                         <td>
                                             <h6 className="text-muted f-w-300"><i className="fa fa-circle text-c-red f-10 m-r-15"/>19 MAY 12:56</h6>
                                         </td>
-                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg2 text-white f-12">Reject</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">Approve</a></td>
+                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg-red text-white f-12">رد</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">تایید</a></td>
                                     </tr>
                                     <tr className="unread">
                                         <td><img className="rounded-circle" style={{width: '40px'}} src={avatar2} alt="activity-user"/></td>
                                         <td>
-                                            <h6 className="mb-1">Albert Andersen</h6>
-                                            <p className="m-0">Lorem Ipsum is simply dummy text of…</p>
+                                            <h6 className="mb-1">آلبرت اندرسون</h6>
+                                            <p className="m-0">لورم ایپسام فارسی برای تست...</p>
                                         </td>
                                         <td>
                                             <h6 className="text-muted"><i className="fa fa-circle text-c-green f-10 m-r-15"/>21 July 12:56</h6>
                                         </td>
-                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg2 text-white f-12">Reject</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">Approve</a></td>
+                                        <td><a href={DEMO.BLANK_LINK} className="label theme-bg-red text-white f-12">رد</a><a href={DEMO.BLANK_LINK} className="label theme-bg text-white f-12">تایید</a></td>
                                     </tr>
                                     </tbody>
                                 </Table>
@@ -202,14 +202,14 @@ class Dashboard extends React.Component {
                             <Card.Body>
                                 <div className="row align-items-center justify-content-center">
                                     <div className="col">
-                                        <h5 className="m-0">Upcoming Event</h5>
+                                        <h5 className="m-0">آخرین رویدادها</h5>
                                     </div>
                                     <div className="col-auto">
                                         <label className="label theme-bg2 text-white f-14 f-w-400 float-right">34%</label>
                                     </div>
                                 </div>
-                                <h2 className="mt-2 f-w-300">45<sub className="text-muted f-14">Competitors</sub></h2>
-                                <h6 className="text-muted mt-3 mb-0">You can participate in event </h6>
+                                <h2 className="mt-2 f-w-300">45<sub className="text-muted f-14">رقبا</sub></h2>
+                                <h6 className="text-muted mt-3 mb-0">شما در این رویداد می توانید شریک بشوید  </h6>
                                 <i className="fa fa-angellist text-c-purple f-50"/>
                             </Card.Body>
                         </Card>

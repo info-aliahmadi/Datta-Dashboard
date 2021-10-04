@@ -2,7 +2,7 @@
   .dropdown {
     height: 70px;
     .dropdown-toggle {
-      margin: -2px 0 0 4px;
+     // margin: -2px 0 0 4px;
     }
   }
   .btn {
@@ -11,7 +11,7 @@
     margin-right: 0;
     border: none;
     &:after {
-      right: -12px !important;
+      //right: -12px !important;
     }
     &:focus,
     &:active,

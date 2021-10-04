@@ -409,6 +409,9 @@
         }
 
         .label {
+            min-width: 50px;
+            text-align: center;
+            display: inline-block;
             border-radius: 15px;
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
         }
@@ -873,7 +876,7 @@
     i {
         position: absolute;
         bottom: 36px;
-        right: 27px;
+        left: 27px;
     }
 }
 
